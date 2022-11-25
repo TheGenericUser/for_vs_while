@@ -1,7 +1,7 @@
-# file=open("fo r_vs_while", "w")
-# file.close()
-# file=open("fo r_vs_while(difference)", "w")
-# file.close()
+file=open("for_vs_while", "w")
+file.close()
+file=open("for_vs_while(difference)", "w")
+file.close()
 
 import time
 start1=time.time()
@@ -19,9 +19,9 @@ for ultimate_loop in range(250):
         a += 1
     while_loop = time.time() - start
     print(f"For loop= {for_loop} while loop= {while_loop}")
-    with open("fo r_vs_while", "a") as fw:
+    with open("for_vs_while", "a") as fw:
         fw.write(f"For Loop= {for_loop} || While Loop= {while_loop} \n")
-    with open("fo r_vs_while(difference)", "a") as fwd:
+    with open("for_vs_while(difference)", "a") as fwd:
         fwd.write(str(while_loop-for_loop)+"\n")
 
 # file=open("fo r_vs_while", "w")
@@ -30,4 +30,4 @@ total_time=time.time()-start1
 print(f"Total time: {total_time}")
 
 
-3249.4898529052734(total time) in sec
+#3249.4898529052734(total time) in sec
